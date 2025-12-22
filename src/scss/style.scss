@@ -1,0 +1,133 @@
+// If you want to override variables do it here
+@import "variables";
+
+// Import styles
+@import "@coreui/coreui/scss/coreui";
+//@import "@coreui/chartjs/scss/coreui-chartjs";
+
+// Vendors
+@import "vendors/simplebar";
+
+// Custom styles for this theme
+@import "theme";
+
+// If you want to add custom CSS you can put it here
+@import "custom";
+
+/* styles.css */
+@media print {
+  /* Hide the parent component's content during printing */
+  .printContents {
+    display: none !important;
+  }
+}
+
+.alert-container {
+  position: fixed;
+  top: 5%;
+  left: 50%;
+  width: 50%;
+  z-index: 1999; /* Ensure the alert appears on top of other content */
+}
+
+.react-datepicker-wrapper {
+    display: block !important;
+}
+
+.pagination {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  justify-content: right;
+}
+
+.page-item {
+  margin: 0 5px;
+}
+
+.page-link {
+  display: block;
+  padding: 8px 16px;
+  text-decoration: none;
+  border: 1px solid #ddd;
+  color: #007bff;
+}
+
+.page-link:hover {
+  background-color: #f8f9fa;
+}
+
+.active .page-link {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.loader-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent background */
+  z-index: 9999; /* Ensure it’s above other content */
+}
+
+.table-font {
+    font-size: 12px;
+}
+
+.utility-icons {
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+/* Chat containers */
+.container {
+  border: 2px solid #dedede;
+  background-color: #f1f1f1;
+  border-radius: 8px;
+  padding: 5px;
+  margin: 10px 0;
+  width: 80%;
+  position: relative;
+}
+
+.darker {
+  border-color: #a0f092;
+  background-color: #d9fdd3;
+  left:20%;
+}
+
+.container::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.container img {
+  float: left;
+  max-width: 60px;
+  width: 100%;
+  margin-right: 10px;
+  border-radius: 50%;
+}
+
+.container .right {
+  float: right;
+  margin-left: 20px;
+  margin-right:0;
+}
+
+.time-right {
+  float: right;
+  color: #aaa;
+}
+
+.time-left {
+  float: left;
+  color: #999;
+}
