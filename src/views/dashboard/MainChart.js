@@ -67,6 +67,14 @@ const MainChart = () => {
               pointHoverBackgroundColor: getStyle('--cui-success'),
               borderWidth: 2,
               data: Object.keys(chartData).length > 0 ? chartData['branch']['Versova'] : [],
+            },
+            {
+              label: 'Juhu',
+              backgroundColor: `rgba(${getStyle('--cui-info-rgb')}, .1)`,
+              borderColor: getStyle('--cui-red'),
+              pointHoverBackgroundColor: getStyle('--cui-red'),
+              borderWidth: 2,
+              data: Object.keys(chartData).length > 0 ? chartData['branch']['Juhu'] : [],
             }
           ],
         }}
@@ -95,11 +103,11 @@ const MainChart = () => {
               grid: {
                 color: getStyle('--cui-border-color-translucent'),
               },
-              max: 200000,
+              max: 250000,
               ticks: {
                 color: getStyle('--cui-body-color'),
                 maxTicksLimit: 6,
-                stepSize: Math.ceil(200000 / 5),
+                stepSize: Math.ceil(250000 / 6),
               },
             },
           },
