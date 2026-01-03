@@ -103,11 +103,11 @@ const MainChart = () => {
               grid: {
                 color: getStyle('--cui-border-color-translucent'),
               },
-              max: 250000,
+              max: 400000,
               ticks: {
                 color: getStyle('--cui-body-color'),
                 maxTicksLimit: 6,
-                stepSize: Math.ceil(250000 / 6),
+                stepSize: Math.ceil(400000 / 6),
               },
             },
           },
